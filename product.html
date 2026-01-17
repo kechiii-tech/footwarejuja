@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Shoes - E & M Footwear</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    // Update WhatsApp link dynamically with selected size
+    function updateWhatsapp() {
+      const size = document.getElementById('shoe-size').value;
+      const waLink = `https://wa.me/254770490942?text=I%20want%20to%20book%20Classic%20Ladies%20Shoes%20Size:%20${size}%20KES%20250`;
+      document.getElementById('whatsappBtn').href = waLink;
+    }
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">E & M Footwear</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / PRODUCT TITLE -->
+  <header class="hero" style="height:40vh; background: linear-gradient(rgba(194,24,91,0.5), rgba(194,24,91,0.5)), url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Classic Ladies Shoes</h1>
+      <p>KES 250</p>
+    </div>
+  </header>
+
+  <!-- PRODUCT DETAILS -->
+  <section class="products">
+    <div class="product-grid" style="grid-template-columns: 1fr 1fr; gap:50px; max-width:1100px; margin:auto;">
+
+      <!-- Product Image Gallery -->
+      <div class="product-image" style="position:relative;">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Classic Ladies Shoes" style="width:100%; border-radius:15px;">
+      </div>
+
+      <!-- Product Info -->
+      <div style="display:flex; flex-direction:column; justify-content:center;">
+        <h2>Classic Ladies Shoes</h2>
+        <p style="font-size:1.2rem; font-weight:600;">Price: KES 250</p>
+
+        <!-- Shoe Size Selector -->
+        <label for="shoe-size" style="margin-top:15px;">Select Shoe Size:</label>
+        <select id="shoe-size" onchange="updateWhatsapp()" style="padding:10px; margin-bottom:20px; border-radius:8px;">
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+        </select>
+
+        <!-- WhatsApp Booking Button -->
+        <a href="https://wa.me/254770490942?text=I want to book Classic Ladies Shoes Size: 35 KES 250" id="whatsappBtn" class="btn whatsapp" style="margin-top:10px;">Book on WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OTHER RECOMMENDED SHOES -->
+  <section class="products">
+    <h2>Other Recommended Shoes</h2>
+    <div class="product-grid">
+
+      <!-- Shoe 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=600&q=80" alt="Stylish Sandals">
+          <div class="quick-view">View Details</div>
+          <span class="badge">New</span>
+        </div>
+        <a href="product.html"><h3>Stylish Sandals</h3></a>
+        <p class="price">KES 250</p>
+        <a href="https://wa.me/254770490942?text=I want to book Stylish Sandals KES 250" class="btn small whatsapp">Book on WhatsApp</a>
+      </div>
+
+      <!-- Shoe 2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80" alt="Elegant Flats">
+          <div class="quick-view">View Details</div>
+          <span class="badge">Best Seller</span>
+        </div>
+        <a href="product.html"><h3>Elegant Flats</h3></a>
+        <p class="price">KES 250</p>
+        <a href="https://wa.me/254770490942?text=I want to book Elegant Flats KES 250" class="btn small whatsapp">Book on WhatsApp</a>
+      </div>
+
+      <!-- Shoe 3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" alt="Classic Heels">
+          <div class="quick-view">View Details</div>
+          <span class="badge">Hot</span>
+        </div>
+        <a href="product.html"><h3>Classic Heels</h3></a>
+        <p class="price">KES 250</p>
+        <a href="https://wa.me/254770490942?text=I want to book Classic Heels KES 250" class="btn small whatsapp">Book on WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Order?</h2>
+    <p>Choose your size and book instantly via WhatsApp!</p>
+    <a href="https://wa.me/254770490942" class="btn whatsapp">Chat on WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/EandMFootwearEnterprise" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.tiktok.com/@EandMFootwearEnterprise" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.instagram.com/EandMFootwearEnterprise" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/254770490942" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <p>© 2026 E & M Footwear Enterprise · Juja | Built by <strong>Kipkoech Emmanuel</strong></p>
+</footer>
+<script>
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {threshold:0.2});
+  sections.forEach(sec=>observer.observe(sec));
+</script>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/254770490942" id="floating-whatsapp">Book on WhatsApp</a>
+</body>
+</html>
